@@ -1,0 +1,10 @@
+I"g<div data-animation="over" data-duration="500" data-infinite="1" data-delay="4000" data-autoplay="1" class="slider w-slider">
+  <div class="mask w-slider-mask">
+      <div class="slide w-slide">
+          <div class="w-container">
+              <div class="main-subheading" style="font-size:60px">Uskoro...</div>
+          </div>
+      </div>
+  </div>
+</div>
+:ET

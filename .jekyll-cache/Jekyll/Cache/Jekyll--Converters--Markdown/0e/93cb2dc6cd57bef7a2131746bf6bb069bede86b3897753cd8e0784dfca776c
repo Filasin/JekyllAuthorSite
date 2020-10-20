@@ -1,0 +1,13 @@
+I"ì<div data-animation="over" data-duration="500" data-infinite="1" data-delay="4000" data-autoplay="1" class="slider w-slider">
+  <div class="mask w-slider-mask">
+      <div class="slide w-slide">
+          <div class="w-container">
+              <h1 class="main-heading">&nbsp;</h1>
+              <h1 class="main-heading bold">&nbsp;</h1>
+              <div class="horizontal-bar"></div>
+              <div class="main-subheading">Uskoro...</div>
+          </div>
+      </div>
+  </div>
+</div>
+:ET
