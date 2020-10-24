@@ -252,7 +252,7 @@ p {
 .section.image {
     padding-top: 25%;
     padding-bottom: 25%;
-    background-image: url(../img/dejan_slajd.jpg);
+    background-image: url(../img/dejan_fotografija.jpg);
     background-position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
@@ -323,7 +323,7 @@ p {
 .slide {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: url("../img/dejan_slajd.jpg");
+  background-image: url("../img/dejan_fotografija.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -331,11 +331,11 @@ p {
 }
 
 .slide._2 {
-  background-image: url("../img/dejan_slajd.jpg");
+  background-image: url("../img/dejan_fotografija.jpg");
 }
 
 .slide._3 {
-  background-image: url("../img/dejan_slajd.jpg");
+  background-image: url("../img/dejan_fotografija.jpg");
 }
 
 .process-titles {
