@@ -12,7 +12,25 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
+
+   html {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    flex: 1;
+    overflow: auto;
+  }
+
 body {
+  height: 100%;
+  margin: 0;
   padding-top: 60px;
   font-family: 'Roboto Condensed', sans-serif;
   color: #333;
@@ -202,15 +220,18 @@ p {
 .stone-logo {
   margin-right: 8px;
   float: left;
-  opacity: 0.9;
 }
 
 .stone-logo.footer {
-  opacity: 0.4;
 }
 
 .brand {
   padding-top: 17px;
+}
+
+.panel-body
+{
+    height: 80%;
 }
 
 .section {
@@ -231,12 +252,12 @@ p {
 }
 
 .section.image {
-  padding-top: 127px;
-  padding-bottom: 127px;
-  background-image: url("../img/dejan_slajd.jpg");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-attachment: fixed;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    background-image: url(../img/dejan_slajd.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .section.lightgrey {
@@ -244,8 +265,8 @@ p {
 }
 
 .section.footer {
-  padding-top: 65px;
-  padding-bottom: 53px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: #323232;
 }
 
