@@ -1,0 +1,71 @@
+I"�<div class="section">
+    <div class="w-container">
+        <div class="w-row" style="text-align: center;">
+            <h2>Pregled korica i sadržaja knjige "Život na Crticu"</h2>
+        </div>
+        <div class="w-row">
+            <div id="flipbook">
+                    <div class="page" style="background-image:url(assets/img/korica_prva.png)"></div>
+                    <div class="page">
+                        <h2>Utorak</h2>
+                        <h2>24. oktobar 2017. godine</h2>
+                        <p>Čuli ste  sve o novim pozadinama i napredninama plastičnog porekla naših vedeta? Znate koja se glumica dobro udala, a koja to sportska diva očijuka sa momcima koji su odavno „poznati policiji“... Nastavak na stranici "Crtica" </p>
+                    </div>
+                    <div class="page">
+                        <h2>Četvrtak</h2>
+                        <h2>16. oktobar 2018. godine</h2>
+                        <p>Dva puta sam bio na bolovanju. Samo jednom su me uhvatili. Drugi put sam polomio nogu pa im nije bilo teško da zaključe da je taj put bilo „odistinski“. Šalu na stranu, značajan broj radnika, naročito u velikim firmama, koristi, da ne kažem zloupotrebljava pravo na plaćeno bolovanje... Nastavak na stranici "Crtica"</p>
+                    </div>
+                    <div class="page">
+                        <h2>Utorak</h2>
+                        <h2>12. februar, 2019. godine</h2>
+                        <p>Bio jednom jedan strašni dasa. Redovno je mlatio mangupe po kraju ako nisu bili dobri prema devojkama. Svakoj baki je umeo da pomogne kad prelazi ulicu i ponese zembilj sa pijace. Takođe, bio je prvak u svemu. Devojke su ga obožavale a njihove majke želele za zeta. E, takav dasa više ne postoji čak ni u pričama... Nastavak na stranici "Crtica"</p>
+                    </div>
+                    <div class="page"></div>
+                    <div class="page" style="background-image:url(assets/img/korica_poslednja.png)"></div>
+            </div>
+        </div>
+        <div class="w-row" style="text-align: center;">
+            <hr />
+            Strana: <input type="number" id="pageFld" min="1" />
+            <button id="prevBtn">Prethodna</button>
+            <button id="nextBtn">Sledeca</button>
+        </div>
+    </div>
+</div>
+
+<div class="section lightgrey">
+    <div class="w-container">
+        <div class="small-title-wrapper">
+            <div class="small-title">Tako su rekli...</div>
+            <div class="horizontal-bar lightgrey"></div>
+        </div>
+        <div data-animation="slide" data-duration="500" data-infinite="1" class="testimonials-slider w-slider">
+            <div class="w-slider-mask">
+                <div class="testimonial-slide w-slide">
+                    <p class="testimonial">Vestibulum sed commodo nunc, eu aliquet sem. Curabitur semper, sem ut posuere tincidunt, sem velit sollicitudin odio, quis hendrerit sapien nunc sit amet sem. Ut sollicitudin dignissim ligula nec porta. </p>
+                    <div class="author">Robert Shapiro, CEO of trulr</div>
+                </div>
+                <div class="testimonial-slide w-slide">
+                    <p class="testimonial">Curabitur semper, sem ut posuere tincidunt, sem velit sollicitudin odio, quis hendrerit sapien nunc sit amet sem. Ut sollicitudin dignissim ligula nec porta. </p>
+                    <div class="author">Lila stokinova, designer at nike</div>
+                </div>
+                <div class="testimonial-slide w-slide">
+                    <p class="testimonial">Vestibulum sed commodo nunc, eu.. Curabitur semper, sem ut posuere tincidunt, sem velit sollicitudin odio, quis hendrerit sapien nunc sit amet sem. Ut sollicitudin dignissim ligula nec porta. </p>
+                    <div class="author">Robert Shapiro, CEO of trulr</div>
+                </div>
+                <div class="testimonial-slide w-slide">
+                    <p class="testimonial">Vestibulum sed commodo nunc, eu aliquet sem. Curabitur semper, sem ut posuere tincidunt, sem velit sollicitudin odio, quis hendrerit sapien nunc sit amet sem. Ut sollicitudin dignissim ligula nec porta. </p>
+                    <div class="author">Robert Shapiro, CEO of trulr</div>
+                </div>
+            </div>
+            <div class="left-arrow w-slider-arrow-left">
+                <div class="w-icon-slider-left"></div>
+            </div>
+            <div class="right-arrow w-slider-arrow-right">
+                <div class="w-icon-slider-right"></div>
+            </div>
+        </div>
+    </div>
+</div>
+:ET

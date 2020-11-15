@@ -7,6 +7,29 @@
     </div>
   </div>
 </div>
-<script src="{{ "assets/js/jquery-3.4.1.min.220afd743d.js" | relative_url }}" type="text/javascript"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="{{ "assets/js/webflow.5506c7a16.js" | relative_url }}" type="text/javascript"></script>
+<script>
+  $("#flipbook").turn({
+    width: 580,
+    height: 400,
+    autoCenter: true
+    });
+    
+    $("#pageFld").val($("#flipbook").turn("page"));
+    
+    $("#flipbook").bind("turned", function(event, page, view) {
+    $("#pageFld").val(page);
+    });
+    
+    $("#pageFld").change(function() {
+    $("#flipbook").turn("page", $(this).val());
+    });
+    
+    $("#prevBtn").click(function() {
+    $("#flipbook").turn("previous");
+    });
+    
+    $("#nextBtn").click(function() {
+    $("#flipbook").turn("next");
+    });
+  </script>

@@ -1,17 +1,11 @@
----
-layout: default
-title: "Pocetna"
-permalink: /
----
-
-<div class="section">
+I"M<div class="section">
     <div class="w-container">
         <div class="w-row" style="text-align: center;">
             <h2>Pregled korica i sadržaja knjige "Život na Crticu"</h2>
         </div>
         <div class="w-row">
             <div id="flipbook">
-                    <div class="page" style="background-image:url({{"assets/img/korica_prva.png" | relative_path}})"></div>
+                    <div class="page" style="background-image:url(assets/img/korica_prva.png)"></div>
                     <div class="page">
                         <h2>Utorak</h2>
                         <h2>24. oktobar 2017. godine</h2>
@@ -28,12 +22,12 @@ permalink: /
                         <p>Bio jednom jedan strašni dasa. Redovno je mlatio mangupe po kraju ako nisu bili dobri prema devojkama. Svakoj baki je umeo da pomogne kad prelazi ulicu i ponese zembilj sa pijace. Takođe, bio je prvak u svemu. Devojke su ga obožavale a njihove majke želele za zeta. E, takav dasa više ne postoji čak ni u pričama... Nastavak na stranici "Crtica"</p>
                     </div>
                     <div class="page"></div>
-                    <div class="page" style="background-image:url({{"assets/img/korica_poslednja.png" | relative_path}})"></div>
+                    <div class="page" style="background-image:url(assets/img/korica_poslednja.png)"></div>
             </div>
         </div>
         <div class="w-row" style="text-align: center;">
-            <hr/>
-            Strana: <input type="number" id="pageFld" min=1/>
+            <hr />
+            Strana: <input type="number" id="pageFld" min="1" />
             <button id="prevBtn">Prethodna</button>
             <button id="nextBtn">Sledeca</button>
         </div>
@@ -69,13 +63,6 @@ permalink: /
                     <p class="testimonial">Moja majka našla novčanik pun para. Kontaktirala čoveka telefonom. Ovaj došao sa nabildovanim dečkom valjda da se tuče, šta li? Majka, obzirom da jedva hoda, zvala ga da dođe da uzme kod kuće. Uglavnom, završilo se tako što je prebrojao pare, a bilo ih je, ostavio 1000 dinara i to je to. Ima i ovde kako para tako i poštenih nalazača.</p>
                     <div class="author">Slađa Kručičan Stanić, književnica, Beograd</div>
                 </div>
-                <div class="testimonial-slide w-slide">
-                    <p class="testimonial">Treba podsećati, neprestano.</p>
-                    <div class="author">Jelena Ćuslović, književnica, profesorka, Čačak</div>
-                </div>
-                <div class="testimonial-slide w-slide">
-                    <p class="testimonial">Još o tome šta su rekli, pogledajte stranicu "Reč"</p>
-                </div>
             </div>
             <div class="left-arrow w-slider-arrow-left">
                 <div class="w-icon-slider-left"></div>
@@ -86,3 +73,4 @@ permalink: /
         </div>
     </div>
 </div>
+:ET

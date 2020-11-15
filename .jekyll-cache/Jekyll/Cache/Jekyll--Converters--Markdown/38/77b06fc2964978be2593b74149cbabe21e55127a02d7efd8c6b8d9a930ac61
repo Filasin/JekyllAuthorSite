@@ -1,0 +1,27 @@
+I"�<div class="section">
+    <div class="w-container">
+        <div class="w-row">
+            <div id="flipbook">
+                    <div class="page" style="background-image:url(assets/img/korica_prva.png)"></div>
+                    <div class="page">
+                        <h2>Utorak 24. oktobar 2017. godine</h2>
+                        <p>Čuli ste  sve o novim pozadinama i napredninama plastičnog porekla naših vedeta? Znate koja se glumica dobro udala, a koja to sportska diva očijuka sa momcima koji su odavno „poznati policiji“... Nastavak na stranici "Crtica" </p>
+                    </div>
+                    <div class="page">
+                        <h2>Četvrtak 16. oktobar 2018. godine</h2>
+                        <p>Dva puta sam bio na bolovanju. Samo jednom su me uhvatili. Drugi put sam polomio nogu pa im nije bilo teško da zaključe da je taj put bilo „odistinski“. Šalu na stranu, značajan broj radnika, naročito u velikim firmama, koristi, da ne kažem zloupotrebljava pravo na plaćeno bolovanje... Nastavak na stranici "Crtica"</p>
+                    </div>
+                    <div class="page">
+                        <h2>Utorak 12. februar, 2019. godine</h2>
+                        <p>Bio jednom jedan strašni dasa. Redovno je mlatio mangupe po kraju ako nisu bili dobri prema devojkama. Svakoj baki je umeo da pomogne kad prelazi ulicu i ponese zembilj sa pijace. Takođe, bio je prvak u svemu. Devojke su ga obožavale a njihove majke želele za zeta. E, takav dasa više ne postoji čak ni u pričama... Nastavak na stranici "Crtica"</p>
+                    </div>
+                    <div class="page" style="background-image:url(assets/img/korica_poslednja.png)"></div>
+            </div>
+            <hr /> 
+            Strana: <input type="number" id="pageFld" min="1" />
+            <button id="prevBtn">Prethodna</button>
+            <button id="nextBtn">Sledeca</button>
+        </div>
+    </div>
+</div>
+:ET
