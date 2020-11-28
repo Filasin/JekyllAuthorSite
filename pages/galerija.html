@@ -1,0 +1,621 @@
+---
+layout: default
+title: Galerija
+permalink: /galerija/
+description: Slike Dejana Grujića i njegovih poznanika, kolega, prijatelja sa posla, promocija, svakodnevnih dešavanja...
+---
+
+<div class="section">
+    <div class="w-container">
+        <div class="w-row">
+            <div class="w-col w-col-4">
+                <h1 class="project-title">Galerija</h1>
+            </div>
+        </div>
+        <div class="w-row">
+            <div class="row" id="gallery" data-toggle="modal" data-target="#galleryModal">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    </ol>
+                    <div class="carousel-inner">
+                    </div>
+                    <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+var descriptors = [
+{
+"pictureName" : "Aca Vidic i Dejan Grujic",
+"captionHeader" : "Aca Vidić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Akademik Ljubisa Rakic, Sara Arsenovic  i Dejan Grujic",
+"captionHeader" : "Akademik Ljubiša Rakić, Sara Arsenović  i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Aleksandra Cimpl i Dejan Grujic",
+"captionHeader" : "Aleksandra Cimpl i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Amira Medunjanin i Dejan Grujic",
+"captionHeader" : "Amira Medunjanin i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Anita Panic i Dejan Grujic",
+"captionHeader" : "Anita Panić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Biljana Stanojevic i Dejan Grujic",
+"captionHeader" : "Biljana Stanojević i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Bisera i Dejan - potpisivanje LP",
+"captionHeader" : "Bisera i Dejan - potpisivanje LP",
+"captionText": "",
+},
+{
+"pictureName" : "Bisera i ja pod maskama",
+"captionHeader" : "Bisera i ja pod maskama",
+"captionText": "",
+},
+{
+"pictureName" : "Biserina promocija",
+"captionHeader" : "Biserina promocija",
+"captionText": "",
+},
+{
+"pictureName" : "Bojana Durman i Dejan Grujic",
+"captionHeader" : "Bojana Durman i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Bojana Mitrovic i Dejan Grujic",
+"captionHeader" : "Bojana Mitrović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Branislav Crnic i Dejan Grujic",
+"captionHeader" : "Branislav Crnić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Ceca Keratovic i Dejan Grujic",
+"captionHeader" : "Ceca Keratović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "CK Vlada Divljan - promocija",
+"captionHeader" : "CK Vlada Divljan - promocija",
+"captionText": "",
+},
+{
+"pictureName" : "Danica Todorovic i Dejan Grujic",
+"captionHeader" : "Danica Todorović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Danijela Vulicevic i Zorica Cirakovic sa Dejanom Grujicem",
+"captionHeader" : "Danijela Vulićević i Zorica Ćiraković sa Dejanom Grujićem",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Grujic",
+"captionHeader" : "Dejan Grujic",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Grujic na koncertu u Areni povodom 50. godina 202-ke",
+"captionHeader" : "Dejan Grujić na koncertu u Areni povodom 50. godina 202-ke",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Grujic na Miona Festu",
+"captionHeader" : "Dejan Grujić na Miona Festu",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Grujic na promociji JUGOTON-a",
+"captionHeader" : "Dejan Grujić na promociji JUGOTON-a",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Grujic sa klasom glume",
+"captionHeader" : "Dejan Grujić sa klasom glume",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Grujic u drustvu pisaca",
+"captionHeader" : "Dejan Grujić u društvu pisaca",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Grujic u Galeriji RTS-a",
+"captionHeader" : "Dejan Grujić u Galeriji RTS-a",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Grujic u studiju 202",
+"captionHeader" : "Dejan Grujić u studiju 202",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Grujic u vreme korone",
+"captionHeader" : "Dejan Grujić u vreme korone",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Grujic za mikrofonom",
+"captionHeader" : "Dejan Grujić za mikrofonom",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Grujic za Vas",
+"captionHeader" : "Dejan Grujić za Vas",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Grujic",
+"captionHeader" : "Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Dejan Djurovic i Dejan Grujic",
+"captionHeader" : "Dejan Đurović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Drustvo 202 - Ulica otvorenog srca",
+"captionHeader" : "Društvo 202 - Ulica otvorenog srca",
+"captionText": "",
+},
+{
+"pictureName" : "Ekipa Ammonite Book's i Dejan Grujic",
+"captionHeader" : "Ekipa Ammonite Book's i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Ekipa PGP RTS i Radio Beograda i Dejan Grujic",
+"captionHeader" : "Ekipa PGP RTS i Radio Beograda i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Ekipa Urban art i Dejan Grujic",
+"captionHeader" : "Ekipa Urban art i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Gari, Zeljka i Dejan Grujic",
+"captionHeader" : "Gari, Željka i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Goran Bajsanski i Dejan Grujic",
+"captionHeader" : "Goran Bajšanski i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Goran Matic i Dejan Grujic",
+"captionHeader" : "Goran Matić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Goran Stojicic i Dejan Grujic",
+"captionHeader" : "Goran Stojičić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Halo, halo",
+"captionHeader" : "Halo, halo",
+"captionText": "",
+},
+{
+"pictureName" : "Harmonikas Dejan Grujic",
+"captionHeader" : "Harmonikaš Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Jelena Ninkovic i Zorana Bokan sa Dejanom Grujicem",
+"captionHeader" : "Jelena Ninković i Zorana Bokan sa Dejanom Grujićem",
+"captionText": "",
+},
+{
+"pictureName" : "Jugoslav Vlahovic, Zoran Modli, i Dejan Grujic",
+"captionHeader" : "Jugoslav Vlahović, Zoran Modli, i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Karlo Astrahan i Dejan Grujic",
+"captionHeader" : "Karlo Astrahan i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Keva i Dejan Grujic",
+"captionHeader" : "Keva i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Knjiga Dejana Grujica - Zivot na Crticu",
+"captionHeader" : "Knjiga Dejana Grujića - Život na Crticu",
+"captionText": "",
+},
+{
+"pictureName" : "Kod pokojnog Toze Grka",
+"captionHeader" : "Kod pokojnog Toze Grka",
+"captionText": "",
+},
+{
+"pictureName" : "Laura Barna, Zeljka Avric , Karlo Astrahan i Dejan Grujic",
+"captionHeader" : "Laura Barna, Željka Avrić , Karlo Astrahan i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Leto na Tasmajdanu",
+"captionHeader" : "Leto na Tašmajdanu",
+"captionText": "",
+},
+{
+"pictureName" : "Lidija Antonovic i Dejan Grujic",
+"captionHeader" : "Lidija Antonović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Lidija Jelisavcic Ciric i Dejan Grujic",
+"captionHeader" : "Lidija Jelisavčić Ćirić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Ljilja Nikolovska i Dejan Grujic",
+"captionHeader" : "Ljilja Nikolovska i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Ljiljana Grujic i Dejan Grujc",
+"captionHeader" : "Ljiljana Grujić i Dejan Grujć",
+"captionText": "",
+},
+{
+"pictureName" : "Ljiljana Nikolovska i Dejan",
+"captionHeader" : "Ljiljana Nikolovska i Dejan",
+"captionText": "",
+},
+{
+"pictureName" : "Lordan Zafranovic i Dejan Grujic",
+"captionHeader" : "Lordan Zafranović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Maja Spiric i Dejan Grujic",
+"captionHeader" : "Maja Spirić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Marija Gojkovic i Dejan Grujic",
+"captionHeader" : "Marija Gojković i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Marijana Butulija i Dejan Grujic",
+"captionHeader" : "Marijana Butulija i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Marinko Pijukovic i Dejan Grujic - promocija benda Hajo",
+"captionHeader" : "Marinko Pijuković i Dejan Grujić - promocija benda Hajo",
+"captionText": "",
+},
+{
+"pictureName" : "Mariola Pantelic i Dejan Grujic",
+"captionHeader" : "Mariola Pantelić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Marko Stanojevic i Dejan Grujic",
+"captionHeader" : "Marko Stanojević i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Marko Stojanovic i Dejan Grujic",
+"captionHeader" : "Marko Stojanović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Matija Beckovic i Dejan Grujic",
+"captionHeader" : "Matija Bećković i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Minja Subota i Dejan Grujic",
+"captionHeader" : "Minja Subota i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Mira Djusic i Dejan Grujic",
+"captionHeader" : "Mira Đušić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Mira Djusic Sladja Stanic i Dejan Grujic",
+"captionHeader" : "Mira Đušić Slađa Stanić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Monika Masirevic i Dejan Grujic",
+"captionHeader" : "Monika Maširević i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Muharem Bazdulj i Dejan Grujic",
+"captionHeader" : "Muharem Bazdulj i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Natalija Cajic, Dafina Dostanic i Dejan Grujic",
+"captionHeader" : "Natalija Cajić, Dafina Dostanić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Nedeljko Todorovic i Dejan Grujic",
+"captionHeader" : "Nedeljko Todorović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Nesa Ristic i Dejan Grujic",
+"captionHeader" : "Neša Ristić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Nikola Misovic i Dejan Grujic",
+"captionHeader" : "Nikola Mišović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Olja Ristic i Dejan Grujic",
+"captionHeader" : "Olja Ristić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Pevac Marko Krizanovic i Dejan Grujic",
+"captionHeader" : "Pevač Marko Križanović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Prezivi u Srbiji ako mozes",
+"captionHeader" : "Preživi u Srbiji ako možeš",
+"captionText": "",
+},
+{
+"pictureName" : "Princeza Jelisaveta i Dejan",
+"captionHeader" : "Princeza Jelisaveta i Dejan",
+"captionText": "",
+},
+{
+"pictureName" : "Profesor Marko Sredojevic i Dejan Grujic",
+"captionHeader" : "Profesor Marko Sredojević i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Promocija knjiga Violete Aleksic",
+"captionHeader" : "Promocija knjiga Violete Aleksić",
+"captionText": "",
+},
+{
+"pictureName" : "Prva najava objavljivanja knjige Zivot na crticu",
+"captionHeader" : "Prva najava objavljivanja knjige Život na crticu",
+"captionText": "",
+},
+{
+"pictureName" : "Radio KRUG - Ljilja Crnic, Jovan Arsenijevic i Dejan GRUJIC",
+"captionHeader" : "Radio KRUG - Ljilja Crnić, Jovan Arsenijević i Dejan GRUJIĆ",
+"captionText": "",
+},
+{
+"pictureName" : "Rodjendan 202 - pedeseti",
+"captionHeader" : "Rođendan 202 - pedeseti",
+"captionText": "",
+},
+{
+"pictureName" : "Rsum i Dejan",
+"captionHeader" : "Ršum i Dejan",
+"captionText": "",
+},
+{
+"pictureName" : "Sanja Trifunovic Hiblovic i Dejan Grujic",
+"captionHeader" : "Sanja Trifunović Hiblović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Slavica Djukic Dejanovic i Dejan Grujic",
+"captionHeader" : "Slavica Đukić Dejanović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Slobodan Ivankovic i Dejan Grujic",
+"captionHeader" : "Slobodan Ivanković i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Slobodan Djurovic i Dejan Grujic",
+"captionHeader" : "Slobodan Đurović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Snezana Grujic i Dejan Grujic",
+"captionHeader" : "Snežana Grujić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Srdjan Opacic i Dejan Grujic",
+"captionHeader" : "Srđan Opačić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Tanja Gajovic, Gordan Bakota, i Dejan Grujic",
+"captionHeader" : "Tanja Gajović, Gordan Bakota, i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Tanja Sikic i Dejan Grujic",
+"captionHeader" : "Tanja Šikić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Tonka Alujevic i Dejan Grujic",
+"captionHeader" : "Tonka Alujević i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Tribina u Mionici 2019. godine",
+"captionHeader" : "Tribina u Mionici 2019. godine",
+"captionText": "",
+},
+{
+"pictureName" : "Valentina Novkovic i Dejan Grujc",
+"captionHeader" : "Valentina Novković i Dejan Grujć",
+"captionText": "",
+},
+{
+"pictureName" : "Verica Mihajlovic i Dejan Grujic",
+"captionHeader" : "Verica Mihajlović i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Vesna Farkas i Dejan Grujc",
+"captionHeader" : "Vesna Farkaš i Dejan Grujć",
+"captionText": "",
+},
+{
+"pictureName" : "Vesna Pajic i Dejan Grujic",
+"captionHeader" : "Vesna Pajić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Vesna Paunovic Djukic i Dejan Grujic",
+"captionHeader" : "Vesna Paunović Đukić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Vesna Radosavljevic, Zeljka Zebic i Dejan Grujic",
+"captionHeader" : "Vesna Radosavljević, Željka Zebić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Vesna Cingelic, Nada Macura i Dejan Grujic",
+"captionHeader" : "Vesna Čingelić, Nada Macura i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Violeta Aleksic i Dejan Grujic",
+"captionHeader" : "Violeta Aleksić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Vlada Arsic i Dejan Grujic",
+"captionHeader" : "Vlada Arsić i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Vladanka Cvetkovic i Dejan Grujic",
+"captionHeader" : "Vladanka Cvetković i Dejan Grujić",
+"captionText": "",
+},
+{
+"pictureName" : "Za kormilom",
+"captionHeader" : "Za kormilom",
+"captionText": "",
+},
+{
+"pictureName" : "ZADNJE KORICE - DEJAN GRUJIC ",
+"captionHeader" : "ZADNJE KORICE - DEJAN GRUJIĆ ",
+"captionText": "",
+},
+{
+"pictureName" : "Zoran Modli i Dejan Grujic",
+"captionHeader" : "Zoran Modli i Dejan Grujić",
+"captionText": "",
+},
+
+];
+var galeryHtmlStrings = [];
+var carouselIndicators = [];
+var itemHtmlStrings = [];
+
+var index = 0;
+
+for(var descriptor of descriptors)
+{
+    var galeryHtmlString = ''
+        +'<div class="col-12 col-sm-6 col-lg-3" style="padding-top:15px;">'
+        +'<img class="w-100" src="{{ "assets/img/galerija/'+descriptor.pictureName+'.jpg" | relative_url }}"'
+        +' alt="'+descriptor.pictureName+'" data-target="#galleryCarousel" data-slide-to="'+index+'">'
+        +'</div>';
+
+    var carouselIndicator = ''
+        +'<li data-target="#galleryCarousel" data-slide-to="'+index+'"></li>';
+
+    var itemHtmlString = ''
+        +'<div class="carousel-item">'
+        + '<img class="d-block w-100" '
+        +       'src="{{ "assets/img/galerija/'+descriptor.pictureName+'.jpg" | relative_url }}" alt="'+descriptor.pictureName+'">'
+        +  '<div class="carousel-caption">'
+        +    '<h3 style="background-color:#F5F5DC; color: black;">'+descriptor.captionText+'</h3>'
+        +    '<p style="background-color:#F5F5DC; color: black;">'+descriptor.captionHeader+'</p>'
+        +  '</div>'
+        +'</div>';
+    
+    galeryHtmlStrings.push(galeryHtmlString);
+    carouselIndicators.push(carouselIndicator);
+    itemHtmlStrings.push(itemHtmlString);
+
+    index = index + 1;
+}
+
+var myGaleryEl = document.getElementById("gallery");
+var myCarouselEl = document.getElementById("galleryCarousel");
+
+myGaleryEl.innerHTML = galeryHtmlStrings.join("\n");
+
+var carouselIndicatorsEl = myCarouselEl.getElementsByClassName("carousel-indicators")[0];
+carouselIndicatorsEl.innerHTML = carouselIndicators.join("\n");
+carouselIndicatorsEl.firstElementChild.className += " active";
+
+var carouselInnerEl = myCarouselEl.getElementsByClassName("carousel-inner")[0];
+carouselInnerEl.innerHTML = itemHtmlStrings.join("\n");
+carouselInnerEl.firstElementChild.className += " active";
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">

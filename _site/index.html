@@ -25,7 +25,7 @@
   <meta charset="utf-8">
 
   <title>Pocetna - Dejan Grujic</title>
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
   <link href="/assets/css/template.css" rel="stylesheet" type="text/css" />
   <script src="/assets/js/webfront.js" type="text/javascript"></script>
@@ -33,10 +33,6 @@
     type="text/javascript">WebFont.load({ google: { families: ["Vollkorn:400,400italic,700,700italic", "Roboto Condensed:300,regular,700", "Roboto:300,regular,500"] } });</script>
   <script
     type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
-    
-  <script src="/assets/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/js/turn.min.js"></script>
 
   
   
@@ -50,30 +46,11 @@
                 width="150" alt="dejan grujic logo" class="stone-logo" /></a>
 
         <nav role="navigation" class="nav-menu w-nav-menu">
-            <a href="/" class="nav-link w-nav-link w--current">Početna</a>
             <a href=/crtica/ class="nav-link w-nav-link">Crtica</a>
             <a href=/rec/ class="nav-link w-nav-link">Reč</a>
             <a href=/biografija/ class="nav-link w-nav-link">Biografija</a>
-            <a href="http://www.facebok.com/grujic"
-                class="nav-link w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link">Facebook</a>
-            <a href="http://www.twitter.com/voditelj202"
-                class="nav-link w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link">Twitter</a>
-            <a href="http://www.instagram.com/grujic202"
-                class="nav-link w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link">Instagram</a>
+            <a href=/galerija/ class="nav-link w-nav-link">Galerija</a>
         </nav>
-
-        <a target="_blank" href="http://www.instagram.com/grujic202"
-            class="nav-link social-icons w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block"><img
-                src="https://cdns.iconmonstr.com/wp-content/assets/preview/2016/240/iconmonstr-instagram-11.png"
-                width="15" alt="instagram icon" /></a>
-        <a target="_blank"  href="http://www.twitter.com/voditelj202"
-            class="nav-link social-icons last w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block">
-            <img src="https://assets.website-files.com/5e457cdd6bf0d06897420d3a/5e457cdd6bf0d0642f420d49_twitter-icon.svg"
-                width="16" alt="twitter icon" /></a>
-        <a target="_blank"  href="http://www.facebok.com/grujic"
-            class="nav-link social-icons w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block"><img
-                src="https://assets.website-files.com/5e457cdd6bf0d06897420d3a/5e457cdd6bf0d0781c420d40_facebook-icon2.svg"
-                width="15" alt="facebook icon" /></a>
         <div class="menu-button w-nav-button">
             <div class="menu-icon w-icon-nav-menu"></div>
         </div>
@@ -130,7 +107,7 @@
                 </div>
                 <div class="testimonial-slide w-slide">
                     <p class="testimonial">202 crtice predstavljaju pokušaj da se shvati mali deo misli jednog velikog čoveka, što Dejan Grujić i jeste zbog britkoće njegovog uma, strpljivosti, inteligencije, zato što njega uvek interesuje nečiji karakter i to ko si ti, a ne društveni položaj individue. Crtice su hronika jednog burnog vremena, hronika o događajima, o moralu i poštenju, o umetnosti življenja, ali i o ljudima koji su obeležili jednu epohu</p>
-                    <div class="author">Karlo Astrahan, književnik i bibliotekar</div>
+                    <div class="author">Karlo Astrahan, pisac, urednik programa u biblioteci "Milutin Bojić", u Beogradu</div>
                 </div>
                 <div class="testimonial-slide w-slide">
                     <p class="testimonial">Na žalost ne obracamo paznju sebi dovoljno, ili nikako, a kada bolest
@@ -163,17 +140,10 @@
     </div>
 </div>
 
-    </div>
-    <div class="footer"><div class="section footer">
-  <div class="w-container">
-    <div class="w-row">
-      <div class="w-col w-col-4">&nbsp;</div>
-      <div class="w-col w-col-4" style="text-align: center;">© Copyright 2020 Dejan Grujic - All Rights Reserved.</div>
-      <div class="w-col w-col-4">&nbsp;</div>
-    </div>
-  </div>
-</div>
-<script src="/assets/js/webflow.5506c7a16.js" type="text/javascript"></script>
+<script src="/assets/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="/assets/js/turn.min.js"></script>
+
 <script>
   $("#flipbook").turn({
     width: 580,
@@ -198,7 +168,33 @@
     $("#nextBtn").click(function() {
     $("#flipbook").turn("next");
     });
-  </script> </div>
+  </script>
+
+
+    </div>
+    <div class="footer"><div class="section footer">
+  <div class="w-container">
+    <div class="w-row">
+      <div class="w-col w-col-4">&nbsp;</div>
+      <div class="w-col w-col-4" style="text-align: center;">© Copyright 2020 Dejan Grujic - All Rights Reserved.</div>
+      <div class="w-col w-col-4">
+        <a target="_blank" href="http://www.instagram.com/grujic202"
+        class="nav-link social-icons w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block"><img
+            src="https://cdns.iconmonstr.com/wp-content/assets/preview/2016/240/iconmonstr-instagram-11.png"
+            width="15" alt="instagram icon" /></a>
+      <a target="_blank"  href="http://www.twitter.com/voditelj202"
+          class="nav-link social-icons last w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block">
+          <img src="https://assets.website-files.com/5e457cdd6bf0d06897420d3a/5e457cdd6bf0d0642f420d49_twitter-icon.svg"
+              width="16" alt="twitter icon" /></a>
+      <a target="_blank"  href="http://www.facebok.com/grujic"
+          class="nav-link social-icons w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block"><img
+              src="https://assets.website-files.com/5e457cdd6bf0d06897420d3a/5e457cdd6bf0d0781c420d40_facebook-icon2.svg"
+              width="15" alt="facebook icon" /></a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/assets/js/webflow.5506c7a16.js" type="text/javascript"></script> </div>
   </div>
 </body>
 

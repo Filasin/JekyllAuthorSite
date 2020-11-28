@@ -54,7 +54,7 @@ permalink: /
                 </div>
                 <div class="testimonial-slide w-slide">
                     <p class="testimonial">202 crtice predstavljaju pokušaj da se shvati mali deo misli jednog velikog čoveka, što Dejan Grujić i jeste zbog britkoće njegovog uma, strpljivosti, inteligencije, zato što njega uvek interesuje nečiji karakter i to ko si ti, a ne društveni položaj individue. Crtice su hronika jednog burnog vremena, hronika o događajima, o moralu i poštenju, o umetnosti življenja, ali i o ljudima koji su obeležili jednu epohu</p>
-                    <div class="author">Karlo Astrahan, književnik i bibliotekar</div>
+                    <div class="author">Karlo Astrahan, pisac, urednik programa u biblioteci "Milutin Bojić", u Beogradu</div>
                 </div>
                 <div class="testimonial-slide w-slide">
                     <p class="testimonial">Na žalost ne obracamo paznju sebi dovoljno, ili nikako, a kada bolest
@@ -86,3 +86,33 @@ permalink: /
         </div>
     </div>
 </div>
+
+<script src="{{ "assets/js/jquery-3.4.1.min.220afd743d.js" | relative_url }}" type="text/javascript"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{ "assets/js/turn.min.js" | relative_url }}"></script>
+
+<script>
+  $("#flipbook").turn({
+    width: 580,
+    height: 400,
+    autoCenter: true
+    });
+    
+    $("#pageFld").val($("#flipbook").turn("page"));
+    
+    $("#flipbook").bind("turned", function(event, page, view) {
+    $("#pageFld").val(page);
+    });
+    
+    $("#pageFld").change(function() {
+    $("#flipbook").turn("page", $(this).val());
+    });
+    
+    $("#prevBtn").click(function() {
+    $("#flipbook").turn("previous");
+    });
+    
+    $("#nextBtn").click(function() {
+    $("#flipbook").turn("next");
+    });
+  </script>
