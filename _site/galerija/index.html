@@ -65,15 +65,15 @@
             </div>
         </div>
         <div class="w-row">
-            <div class="row" id="gallery" data-toggle="modal" data-target="#galleryModal">
+            <div class="row custom" id="gallery" data-toggle="modal" data-target="#galleryModal">
             </div>
         </div>
     </div>
 </div>
 
-<div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade custom" id="galleryModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content modal-fullscreen">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -635,7 +635,7 @@ for(var descriptor of descriptors)
         +'</div>';
 
     var carouselIndicator = ''
-        +'<li data-target="#galleryCarousel" data-slide-to="'+index+'"></li>';
+        +'<li data-target="#galleryCarousel"></li>';
 
     var itemHtmlString = ''
         +'<div class="carousel-item">'
@@ -646,7 +646,7 @@ for(var descriptor of descriptors)
         +    '<p style="background-color:#F5F5DC; color: black;">'+descriptor.captionHeader+'</p>'
         +  '</div>'
         +'</div>';
-    
+
     galeryHtmlStrings.push(galeryHtmlString);
     carouselIndicators.push(carouselIndicator);
     itemHtmlStrings.push(itemHtmlString);
@@ -671,6 +671,7 @@ carouselInnerEl.firstElementChild.className += " active";
 <script src="/assets/js/jquery-3.5.1.slim.min.js"></script>
 <script src="/assets/js/popper.min.js"></script>
 <script src="/assets/js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" href="/assets/css/main.css">
     </div>
     <div class="footer"><div class="section footer">

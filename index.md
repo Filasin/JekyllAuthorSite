@@ -87,8 +87,7 @@ permalink: /
     </div>
 </div>
 
-<script src="{{ "assets/js/jquery-3.4.1.min.220afd743d.js" | relative_url }}" type="text/javascript"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="{{ "/assets/js/jquery-3.5.1.slim.min.js" | relative_url }}"></script>
 <script type="text/javascript" src="{{ "assets/js/turn.min.js" | relative_url }}"></script>
 
 <script>

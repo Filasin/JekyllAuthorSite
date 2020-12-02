@@ -1,4 +1,4 @@
-I"=<div class="section">
+I"�<div class="section">
     <div class="w-container">
         <div class="w-row" style="text-align: center;">
             <h2>Pregled korica i sadržaja knjige "Život na Crticu"</h2>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="testimonial-slide w-slide">
                     <p class="testimonial">202 crtice predstavljaju pokušaj da se shvati mali deo misli jednog velikog čoveka, što Dejan Grujić i jeste zbog britkoće njegovog uma, strpljivosti, inteligencije, zato što njega uvek interesuje nečiji karakter i to ko si ti, a ne društveni položaj individue. Crtice su hronika jednog burnog vremena, hronika o događajima, o moralu i poštenju, o umetnosti življenja, ali i o ljudima koji su obeležili jednu epohu</p>
-                    <div class="author">Karlo Astrahan, pisac, urednik programa u biblioteci "Milutin Bojic", u Beogradu</div>
+                    <div class="author">Karlo Astrahan, pisac, urednik programa u biblioteci "Milutin Bojić", u Beogradu</div>
                 </div>
                 <div class="testimonial-slide w-slide">
                     <p class="testimonial">Na žalost ne obracamo paznju sebi dovoljno, ili nikako, a kada bolest
@@ -81,7 +81,7 @@
     </div>
 </div>
 
-<script src="/assets/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="/assets/js/jquery-3.5.1.slim.min.js"></script>
 
 <script type="text/javascript" src="/assets/js/turn.min.js"></script>
 

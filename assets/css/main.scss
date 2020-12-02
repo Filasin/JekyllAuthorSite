@@ -36,12 +36,14 @@ $bootstrap-xl: 1200px;
 .carousel-item {
   
   img {
-    height: 60vw;
-    object-fit: cover;
+    max-height: 80vh;
+    max-width: 80vw;
+    //height: 60vw;
+    object-fit: contain;
     
-    @media (min-width: $bootstrap-sm) {
-      height: 350px;
-    }
+    //@media (min-width: $bootstrap-sm) {
+    //  height: 350px;
+    //}
   }
 }
 
@@ -69,7 +71,7 @@ $bootstrap-xl: 1200px;
   }
 }
 
-#exampleModal.custom {
+#galleryModal.custom {
   .modal-content {
     background: none;
     border: none;
