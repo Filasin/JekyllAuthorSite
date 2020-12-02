@@ -19,7 +19,7 @@ $bootstrap-xl: 1200px;
   
   img {
     height: 75vw;
-    object-fit: cover;
+    object-fit: contain;
     
     @media (min-width: $bootstrap-sm) {
       height: 35vw;
