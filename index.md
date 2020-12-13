@@ -44,10 +44,9 @@ permalink: /
                 <div class="row">
                     <ul>
                         <li style="list-style: none;"><h3>Intervjui</h3></li>
-                        <li><a href="http://skr.rs/Pdd" class="w-list-link">Književna radionica "Kordun"</a></li>
-                        <li><a href="http://skr.rs/Pdo" class="w-list-link">Dejan Grujić: Radio ima novu budućnost</a></li>
-                        <li><a href="http://skr.rs/PdC" class="w-list-link">Crtica sa Dejanom Grujićem: Kosmet je u svakome od nas, jeste i biće</a></li>
-                        <li><a href="http://skr.rs/Pd1" class="w-list-link">Dijalozi o kulturi</a></li>
+                        {% for interview in site.data.interviews %}
+                        <li><a href="{{interview.link}}" class="w-list-link">{{interview.title}}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -63,38 +62,12 @@ permalink: /
         </div>
         <div data-animation="slide" data-duration="500" data-infinite="1" class="testimonials-slider w-slider">
             <div class="w-slider-mask">
-                <div class="testimonial-slide w-slide">
-                    <p class="testimonial">Crtice Dejana Grujića nisu verbalne folaže već osmišljen spoj aktuelnog sa obaveznim, problematičnog sa rešivim, beskorisnog sa korisnim... Autor ne opterećuje, ne filozofira, ne pametuje, ne nameće se već, kao Svevideći, samo – ukazuje. Ko ne živi na crticu taj nikada ne spozna Život. Opaska, žaoka, kratak ubod, takav je ''Život na crticu'' Dejana Grujića.</p>
-                    <div class="author">Mr Milovan Filipović</div>
-                </div>
-                <div class="testimonial-slide w-slide">
-                    <p class="testimonial">202 crtice predstavljaju pokušaj da se shvati mali deo misli jednog velikog čoveka, što Dejan Grujić i jeste zbog britkoće njegovog uma, strpljivosti, inteligencije, zato što njega uvek interesuje nečiji karakter i to ko si ti, a ne društveni položaj individue. Crtice su hronika jednog burnog vremena, hronika o događajima, o moralu i poštenju, o umetnosti življenja, ali i o ljudima koji su obeležili jednu epohu</p>
-                    <div class="author">Karlo Astrahan, pisac, urednik programa u biblioteci "Milutin Bojić", u Beogradu</div>
-                </div>
-                <div class="testimonial-slide w-slide">
-                    <p class="testimonial">Ja čuvam džemper koji mi je poklonila moja najbolja školska prijateljica. Sama je očesljala, isprela i pripremila vunu i oštrikala najljepsi džemper koji sam jako dugo nosila,a i danas ima posebno mjesto u mom ormaru, omalio, ali ipak posebno vrijedan, moj.</p>
-                    <p class="author">Nena Mlađen, Noehausen, Štutgart, Nemačka</p>
-                </div>
-                <div class="testimonial-slide w-slide">
-                    <p class="testimonial">Na žalost ne obracamo paznju sebi dovoljno, ili nikako, a kada bolest
-                    uznapreduje, borba je velika; više puta uzaludna jer se kasno javljamo, ili malo njih ipak ima sreće da prezivi... Zato sto pre kod lekara na kontrole .. Pozdrav, Dejane iz Kikinde.</p>
-                    <div class="author">Marta Kiš – Jovanović, Kikinda (1951-2020)</div>
-                </div>
-                <div class="testimonial-slide w-slide">
-                    <p class="testimonial">Praznik je kad čovek radi ono što voli! Postoji jedna reč koja sve više gubi smisao, u mom selu na Kordunu gde sam se rodio i odrastao kaže se, odgoj!</p>
-                    <div class="author">Ilija Šaula, književnik, SAD, Pensilvanija</div>
-                </div>
-                <div class="testimonial-slide w-slide">
-                    <p class="testimonial">Moja majka našla novčanik pun para. Kontaktirala čoveka telefonom. Ovaj došao sa nabildovanim dečkom valjda da se tuče, šta li? Majka, obzirom da jedva hoda, zvala ga da dođe da uzme kod kuće. Uglavnom, završilo se tako što je prebrojao pare, a bilo ih je, ostavio 1000 dinara i to je to. Ima i ovde kako para tako i poštenih nalazača.</p>
-                    <div class="author">Slađa Kručičan Stanić, književnica, Beograd</div>
-                </div>
-                <div class="testimonial-slide w-slide">
-                    <p class="testimonial">Treba podsećati, neprestano.</p>
-                    <div class="author">Jelena Ćuslović, književnica, profesorka, Čačak</div>
-                </div>
-                <div class="testimonial-slide w-slide">
-                    <p class="testimonial">Još o tome šta su rekli, pogledajte stranicu "Reč"</p>
-                </div>
+                {% for rec in site.data.reci_sazetak %}
+                    <div class="testimonial-slide w-slide">
+                        <p class="testimonial">{{rec.text}}</p>
+                        <div class="author">{{rec.author}}</div>
+                    </div>
+                {% endfor %}
             </div>
             <div class="left-arrow w-slider-arrow-left">
                 <div class="w-icon-slider-left"></div>
