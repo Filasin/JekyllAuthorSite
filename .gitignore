@@ -1,0 +1,28 @@
+# Logs and system files
+.DS_Store
+Thumbs.db
+.idea/
+*.log
+
+# Ruby-specific files
+*.gem
+.rvmrc
+.ruby-version
+.ruby-gemset
+
+# Bundler files
+.bundle/
+vendor/
+Gemfile.lock
+
+# Jekyll-generated site files
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.swo
+*~
