@@ -1,28 +1,32 @@
 ---
 layout: default
 title: Rec
-permalink: /rec/
 description: Ovde će biti dosta reči o tome šta su o, delima Dejana Grujića, govorili mnogobrojni poštovaoci, poznanici, kolege, prijatelji.
 ---
+
 {% for rec in site.data.reci %}
-    {% assign remainder = forloop.index0 | modulo: 2 %}
-    {% if remainder == 0 %}
-    <div class="section">
-    {% else %}
-    <div class="section lightgrey">
-    {% endif %}
-        <div class="w-container">
-            {% if forloop.first == true %}
-            <div class="w-row" style="margin-bottom: 20px;">
-                <h1 class="project-title">Reči dragih ljudi</h1>
-            </div>
-            {% endif %}
-            <div class="w-row">
-                <div class="w-col w-col-12">
-                    <p class="subheading">{{rec.text}}</p>
-                    <p class="subheading" style="text-align: right;">{{rec.author}}</p>
-                </div>
+<div class="section {{ forloop.index0 | modulo: 2 | plus: 'even' | replace: 'even', '' | replace: '1', 'lightgrey' }}">
+    <div class="w-container">
+        {% if forloop.first == true %}
+        <div class="w-row" style="margin-bottom: 20px;">
+            <h1 class="project-title text-center" style="font-size: 2.5rem; color: #333; border-bottom: 3px solid #f2a365; padding-bottom: 10px;">
+                Reči dragih ljudi
+            </h1>
+        </div>
+        {% endif %}
+        <div class="w-row" style="margin-bottom: 30px; padding: 20px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+            <div class="w-col w-col-12">
+                <blockquote class="quote" style="font-size: 1.25rem; line-height: 1.75; color: #444; font-style: italic;">
+                    “{{ rec.text }}”
+                </blockquote>
+                <p class="author" style="text-align: right; font-size: 1.1rem; color: #555; margin-top: 10px; font-weight: bold;">
+                    {{ rec.author }}
+                </p>
             </div>
         </div>
     </div>
+</div>
 {% endfor %}
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

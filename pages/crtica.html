@@ -1,31 +1,42 @@
 ---
 layout: default
 title: Crtica
-permalink: /crtica/
 description: Crtica je autorski tekst u kojem Dejan Grujić komentariše svakodnevne događaje posmatrane kroz prizmu običnog čoveka.
 ---
-{% for crtica in site.data.crtice %}
-    {% assign remainder = forloop.index0 | modulo: 2 %}
-    {% if remainder == 0 %}
-    <div class="section">
-    {% else %}
-    <div class="section lightgrey">
-    {% endif %}
-        <div class="w-container">
-            {% if forloop.first == true %}
-                <div class="w-row" style="margin-bottom: 20px;">
-                    <h1 class="project-title">Odabrane crtice</h1>
-                </div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Odabrane Crtice</h1>
+        <p class="hero-subtitle">Zaronite u svakodnevne priče, komentare i misli kroz prizmu običnog čoveka.</p>
+    </div>
+</div>
+
+<!-- Crtice List -->
+<div class="crtice-list">
+    {% for crtica in site.data.crtice %}
+    <section class="crtica-item {% if forloop.index0 | modulo: 2 == 0 %}light-background{% else %}dark-background{% endif %}">
+        <div class="content">
+            {% if forloop.first %}
+            <header>
+                <h2 class="section-title">Dejan Grujić - Crtice</h2>
+            </header>
             {% endif %}
 
-            <div class="w-row">
-                <h2 class="project-title">{{crtica.date}}</h2>
+            <article class="crtica-content">
+                <h3 class="crtica-date">
+                    <i class="fa fa-calendar"></i> {{ crtica.date }}
+                </h3>
                 {% for paragraph in crtica.paragraphs %}
-                    <p class="project-description">
-                            {{paragraph.text}}
-                    </p>
+                <p class="crtica-text">{{ paragraph.text }}</p>
                 {% endfor %}
-            </div>
+            </article>
         </div>
-    </div>
-{% endfor %}
+    </section>
+    {% endfor %}
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<link rel="stylesheet" href="{{ "/assets/css/crtica.css" | relative_url }}">
