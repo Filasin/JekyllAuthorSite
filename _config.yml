@@ -7,8 +7,8 @@ email: "dgrujic@gmail.com"
 lang: "sr-RS"
 
 # GitHub Pages project site settings
-url: "https://dejangrujic.github.io"
-baseurl: ""
+url: "https://filasin.github.io"
+baseurl: "/JekyllAuthorSite"
 
 # Analytics
 google_analytics: G-YVGY1HEXS0
