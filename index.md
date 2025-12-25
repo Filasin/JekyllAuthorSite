@@ -10,10 +10,10 @@ description: "Dejan Grujić (Dejan Grujic) — Radio Beograd 202 • Glumac • 
     <p class="hero-roles">Radio Beograd 202 • Glumac • Pisac</p>
     <p class="lead">Kratka urednička rečenica o radu i tonu sajta. Zameniti stvarnim tagline-om (1–2 rečenice).</p>
     <div class="hero-cta">
-        <a class="btn btn-primary" href="{{ '/pages/radio.html' | relative_url }}">Slušaj</a>
-        <a class="btn btn-ghost" href="{{ '/pages/acting.html' | relative_url }}">Pogledaj</a>
-        <a class="btn btn-ghost" href="{{ '/pages/writing.html' | relative_url }}">Čitaj</a>
-        <a class="btn btn-ghost" href="{{ '/pages/contact.html' | relative_url }}">Kontakt</a>
+        <a class="btn btn-primary" href="{{ '/radio/' | relative_url }}">Slušaj</a>
+        <a class="btn btn-ghost" href="{{ '/acting/' | relative_url }}">Pogledaj</a>
+        <a class="btn btn-ghost" href="{{ '/writing/' | relative_url }}">Čitaj</a>
+        <a class="btn btn-ghost" href="{{ '/contact/' | relative_url }}">Kontakt</a>
     </div>
 </section>
 
@@ -33,7 +33,7 @@ description: "Dejan Grujić (Dejan Grujic) — Radio Beograd 202 • Glumac • 
             <h3>{{ item.title }}</h3>
             <p class="muted">Radio • {{ item.year }}</p>
             <p>{{ item.description }}</p>
-            <a class="btn btn-ghost" href="{{ '/pages/radio.html' | relative_url }}">Sve radio stavke</a>
+            <a class="btn btn-ghost" href="{{ '/radio/' | relative_url }}">Sve radio stavke</a>
         </article>
         {% endfor %}
 
@@ -43,7 +43,7 @@ description: "Dejan Grujić (Dejan Grujic) — Radio Beograd 202 • Glumac • 
             <h3>{{ item.title }}</h3>
             <p class="muted">Gluma • {{ item.year }}</p>
             <p>{{ item.description }}</p>
-            <a class="btn btn-ghost" href="{{ '/pages/acting.html' | relative_url }}">Sve uloge</a>
+            <a class="btn btn-ghost" href="{{ '/acting/' | relative_url }}">Sve uloge</a>
         </article>
         {% endfor %}
 
@@ -53,7 +53,7 @@ description: "Dejan Grujić (Dejan Grujic) — Radio Beograd 202 • Glumac • 
             <h3>{{ item.title }}</h3>
             <p class="muted">Pisanje • {{ item.year }}</p>
             <p>{{ item.description }}</p>
-            <a class="btn btn-ghost" href="{{ '/pages/writing.html' | relative_url }}">Svi tekstovi</a>
+            <a class="btn btn-ghost" href="{{ '/writing/' | relative_url }}">Svi tekstovi</a>
         </article>
         {% endfor %}
     </div>
