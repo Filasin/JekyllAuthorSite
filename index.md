@@ -1,57 +1,83 @@
 ---
 layout: default
-title: "Pocetna"
+title: "Dejan Grujić — Radio Beograd 202, Ustanak"
 permalink: /
+description: "Dejan Grujić (Dejan Grujic) — Radio Beograd 202 • Glumac • Pisac. Ustanak."
 ---
 
-<div class="section">
-    <div class="w-container">
-        <div class="row">
-            <div class="col-sm-10">
-                <div class="w-row" style="text-align: center;">
-                    <h2>Praznici nam stižu, uz "Život na Crticu"!</h2>
-                </div>
-                <div class="w-row">
-                    <img src="{{ "assets/img/galerija/Praznici nam stizu.jpg" | relative_url }}" style="padding:15px;"/>
-                </div>
-            </div>
-            <div class="col-sm-2" style="border-left: 1px solid black;">
-                <div class="row">
-                    <ul>
-                        <li style="list-style: none;"><h3>Intervjui</h3></li>
-                        {% for interview in site.data.interviews %}
-                        <li><a href="{{interview.link}}" class="w-list-link">{{interview.title}}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
+<section class="hero reveal">
+    <h1 class="hero-title">Dejan Grujić <span class="muted">(Dejan Grujic)</span></h1>
+    <p class="hero-roles">Radio Beograd 202 • Glumac • Pisac</p>
+    <p class="lead">Kratka urednička rečenica o radu i tonu sajta. Zameniti stvarnim tagline-om (1–2 rečenice).</p>
+    <div class="hero-cta">
+        <a class="btn btn-primary" href="{{ '/pages/radio.html' | relative_url }}">Slušaj</a>
+        <a class="btn btn-ghost" href="{{ '/pages/acting.html' | relative_url }}">Pogledaj</a>
+        <a class="btn btn-ghost" href="{{ '/pages/writing.html' | relative_url }}">Čitaj</a>
+        <a class="btn btn-ghost" href="{{ '/pages/contact.html' | relative_url }}">Kontakt</a>
     </div>
-</div>
+</section>
 
-<div class="section lightgrey">
-    <div class="w-container">
-        <div class="small-title-wrapper">
-            <div class="small-title">Tako su rekli o knjizi "Život na Crticu"...</div>
-            <div class="horizontal-bar lightgrey"></div>
-        </div>
-        <div data-animation="slide" data-duration="500" data-infinite="1" class="testimonials-slider w-slider">
-            <div class="w-slider-mask">
-                {% for rec in site.data.reci_sazetak %}
-                    <div class="testimonial-slide w-slide">
-                        <p class="testimonial">{{rec.text}}</p>
-                        <div class="author">{{rec.author}}</div>
-                    </div>
-                {% endfor %}
-            </div>
-            <div class="left-arrow w-slider-arrow-left">
-                <div class="w-icon-slider-left"></div>
-            </div>
-            <div class="right-arrow w-slider-arrow-right">
-                <div class="w-icon-slider-right"></div>
-            </div>
-        </div>
+<section class="reveal" style="margin-top: var(--space-6);">
+    <div class="section-title">
+        <h2>Istaknuto</h2>
+        <div class="bar"></div>
     </div>
-</div>
+    <div class="grid grid-3">
+        {% assign featured_radio = site.radio | where: 'featured', true | sort: 'order' | slice: 0,1 %}
+        {% assign featured_acting = site.acting | where: 'featured', true | sort: 'order' | slice: 0,1 %}
+        {% assign featured_writing = site.writing | where: 'featured', true | sort: 'order' | slice: 0,1 %}
 
-<script src="{{ "/assets/js/jquery-3.5.1.slim.min.js" | relative_url }}"></script>
+        {% for item in featured_radio %}
+        <article class="card">
+            {% if item.image %}<img src="{{ item.image | relative_url }}" alt="{{ item.title }}" loading="lazy" width="1200" height="630">{% endif %}
+            <h3>{{ item.title }}</h3>
+            <p class="muted">Radio • {{ item.year }}</p>
+            <p>{{ item.description }}</p>
+            <a class="btn btn-ghost" href="{{ '/pages/radio.html' | relative_url }}">Sve radio stavke</a>
+        </article>
+        {% endfor %}
+
+        {% for item in featured_acting %}
+        <article class="card">
+            {% if item.image %}<img src="{{ item.image | relative_url }}" alt="{{ item.title }}" loading="lazy" width="1200" height="630">{% endif %}
+            <h3>{{ item.title }}</h3>
+            <p class="muted">Gluma • {{ item.year }}</p>
+            <p>{{ item.description }}</p>
+            <a class="btn btn-ghost" href="{{ '/pages/acting.html' | relative_url }}">Sve uloge</a>
+        </article>
+        {% endfor %}
+
+        {% for item in featured_writing %}
+        <article class="card">
+            {% if item.image %}<img src="{{ item.image | relative_url }}" alt="{{ item.title }}" loading="lazy" width="1200" height="630">{% endif %}
+            <h3>{{ item.title }}</h3>
+            <p class="muted">Pisanje • {{ item.year }}</p>
+            <p>{{ item.description }}</p>
+            <a class="btn btn-ghost" href="{{ '/pages/writing.html' | relative_url }}">Svi tekstovi</a>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="reveal" style="margin-top: var(--space-7);">
+    <div class="section-title">
+        <h2>Press/Media</h2>
+        <div class="bar"></div>
+    </div>
+    <blockquote>
+        "Istaknut u emisiji Ustanak na Radio Beogradu 202" — placeholder. Zameniti stvarnim navodima ili linkovima.
+    </blockquote>
+</section>
+
+<section class="reveal" style="margin-top: var(--space-7);">
+    <div class="section-title">
+        <h2>Kontakt</h2>
+        <div class="bar"></div>
+    </div>
+    <div class="card">
+        <p><strong>E-mail:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p><strong>Twitter:</strong> <a href="https://twitter.com/voditelj202" rel="me">@voditelj202</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/grujic202" rel="me">@grujic202</a></p>
+        <p><strong>Facebook:</strong> <a href="https://facebook.com/grujic" rel="me">/grujic</a></p>
+    </div>
+</section>

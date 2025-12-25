@@ -1,0 +1,19 @@
+photo:
+  src: "assets/img/dejan_fotografija_cropped.jpg"
+  alt: "Fotografija Dejana Grujića"
+
+sections:
+  - title: "Rani život i obrazovanje"
+    paragraphs:
+      - "Dejan Grujić, diplomirani glumac, voditelj, spiker, novinar, urednik, a sada i pisac ili bloger, ili kako vam drago rođen je u Peći, Kosovo i Metohija, 1969. godine."
+      - "Osnovnu školu završio je u Aranđelovcu, srednju u Beogradu, a Akademiju umetnosti u Prištini. Na klasi prof. dr Vladimira Jevtovića diplomirao je glumu 1994. godine."
+
+  - title: "Profesionalna karijera"
+    paragraphs:
+      - 'Tokom studija igrao je u Narodnom pozorištu u Prištini. Bio je organizator mnogobrojnih kulturno-umetničkih programa. Pisao je tekstove i komponovao muziku. Umeo je da svira harmoniku. Jedno vreme bio je usmeren ka pedagoškom radu sa mladima i decom u okviru dramskog studija u centru „Boro i Ramiz" u Prištini.'
+      - 'Posle rata kratko je radio u RTV „Toplica" u Prokuplju, a od oktobra 2001. godine se zaposlio na Radio Beogradu 202 gde i danas radi.'
+
+  - paragraphs:
+      - "Ponosan je na Ljilju, Filipa i Anu."
+
+quote: 'Posebno priznanje mu predstavlja to što je svih 30 godina staža do sada proveo pred mikrofonom kao voditelj „živih emisija"'

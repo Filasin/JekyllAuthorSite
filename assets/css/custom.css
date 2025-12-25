@@ -1,0 +1,99 @@
+/* Custom site tweaks */
+
+/* Keep sidebar avatar visible above overlay */
+.sidebar-about,
+.sidebar-about .avatar {
+  position: relative;
+  z-index: 10;
+}
+
+.sidebar-bg {
+  z-index: 0 !important;
+}
+
+/* Consistent page header styling */
+.page > header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1rem;
+}
+
+.page > header .page-title {
+  margin: 0 0 0.4rem;
+  font-size: 2.1rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #222;
+}
+
+.page > header .note-sm {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Keep cards minimal: hide thumbnail images on listing/featured cards */
+.card img {
+  display: none;
+}
+
+/* Biography page layout tweaks */
+.bio-section-wrap {
+  padding: 2rem 0;
+}
+
+.bio-row {
+  align-items: flex-start;
+}
+
+.bio-photo-col {
+  display: flex;
+  justify-content: center;
+}
+
+.bio-photo {
+  width: 100%;
+  max-width: 230px;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e5e5e5;
+  object-fit: cover;
+}
+
+.bio-content {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.bio-section {
+  margin-bottom: 1.4rem;
+}
+
+.bio-section h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.bio-section p {
+  margin: 0 0 0.85rem;
+}
+
+.bio-quote-row {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.bio-quote {
+  margin: 0 auto;
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #e5e5e5;
+  padding-left: 1rem;
+  max-width: 36rem;
+  font-size: 1rem;
+}

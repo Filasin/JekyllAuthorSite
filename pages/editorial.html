@@ -1,0 +1,28 @@
+---
+layout: page
+title: Crtica
+permalink: /editorial/
+description: Crtica je autorski tekst u kojem Dejan Grujić komentariše svakodnevne događaje posmatrane kroz prizmu običnog čoveka.
+---
+
+<div data-transliterate>
+<!-- Crtice List -->
+<div class="crtice-list" data-transliterate>
+    {% for crtica in site.data.crtice %}
+    {% assign even = forloop.index0 | modulo: 2 %}
+    <section class="crtica-item {% if even == 0 %}light-background{% else %}dark-background{% endif %}">
+        <div class="crtica-inner">
+            <article class="crtica-content">
+                <h3 class="crtica-date">
+                    <i class="fa fa-calendar"></i> {{ crtica.date }}
+                </h3>
+                {% for paragraph in crtica.paragraphs %}
+                <p class="crtica-text">{{ paragraph.text }}</p>
+                {% endfor %}
+            </article>
+        </div>
+    </section>
+    {% endfor %}
+</div>
+</div>
+<link rel="stylesheet" href="{{ "/assets/css/crtica.css" | relative_url }}">

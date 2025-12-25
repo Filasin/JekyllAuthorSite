@@ -10,8 +10,10 @@
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #6b9080, #a4c3b2);
-    color: white;
+    background: none !important;
+    background-image: none !important;
+    background-color: transparent !important;
+    color: inherit !important;
     text-align: center;
     padding: 50px 20px;
 }
@@ -33,12 +35,19 @@
     padding: 20px;
 }
 
+.crtica-inner {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
 .crtica-item {
     margin: 20px 0;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .light-background {
     background-color: #ffffff;

@@ -1,0 +1,11 @@
+{% comment %}
+Hydejack hook: my-head - custom scripts/styles injected into <head>
+{% endcomment %}
+<link rel="stylesheet" href="{{ "/assets/css/lang-toggle.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
+<script>
+  window.__SERBIAN_SCRIPT_CFG__ = {
+    storage_key: "{{ site.serbian_script_toggle.storage_key | default: 'serbianScriptPreference' }}"
+  };
+</script>
+<script defer src="{{ "/assets/js/serbian-script-toggle.js" | relative_url }}"></script>

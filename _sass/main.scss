@@ -7,3 +7,42 @@ body {
   color: $bodyColor;
   font-family: $bodyFont;
 }
+
+// Fix avatar visibility - ensure sidebar content appears above background overlay
+.sidebar-about {
+  position: relative;
+  z-index: 10;
+}
+
+.avatar {
+  position: relative;
+  z-index: 10;
+}
+
+// Ensure sidebar background stays behind
+.sidebar-bg {
+  z-index: 0 !important;
+}
+
+// Page header styling for consistent, professional look
+.page > header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1rem;
+}
+
+.page > header .page-title {
+  margin: 0 0 0.4rem;
+  font-size: 2.1rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #222;
+}
+
+.page > header .note-sm {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+  text-transform: none;
+  letter-spacing: 0;
+}

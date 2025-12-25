@@ -1,0 +1,40 @@
+---
+layout: page
+title: "Biografija"
+permalink: /biography/
+description: "Dejan Grujic - Glumac, voditelj, spiker, novinar i urednik. Biografija njegovog profesionalnog i ličnog života."
+---
+
+<div data-transliterate>
+    <div class="section bio-section-wrap">
+        <div class="w-container">
+            <main class="w-row bio-row">
+                <div class="w-col w-col-4 text-center bio-photo-col">
+                    <img
+                        class="bio-photo"
+                        src="{{ site.data.biography.photo.src | relative_url }}"
+                        alt="{{ site.data.biography.photo.alt }}"
+                    />
+                </div>
+                <div class="w-col w-col-8 bio-content">
+                    {% for section in site.data.biography.sections %}
+                    <section class="bio-section">
+                        {% if section.title %}
+                        <h2>{{ section.title }}</h2>
+                        {% endif %}
+                        {% for paragraph in section.paragraphs %}
+                        <p>{{ paragraph }}</p>
+                        {% endfor %}
+                    </section>
+                    {% endfor %}
+                </div>
+            </main>
+
+            <div class="w-row bio-quote-row">
+                <blockquote class="bio-quote">
+                    {{ site.data.biography.quote }}
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,30 +1,92 @@
-url: "http://dejangrujic.com" # the base hostname & protocol for your site, e.g. http://example.com
+title: "Dejan Grujić"
+tagline: "Radio Beograd 202 • Glumac • Pisac"
+description: >-
+  Dejan Grujić — radio voditelj (Radio Beograd 202, „Ustanak“), glumac i pisac. Ovaj sajt je urednički pregled radova, emisija i nastupa. Zamenska biografija — zameniti stvarnim podacima.
+author: "Dejan Grujić"
+email: "dgrujic@gmail.com"
+lang: "sr-RS"
 
-baseurl: "" # the subpath of your site, e.g. /blog
+# GitHub Pages project site settings
+url: "https://dejangrujic.github.io"
+baseurl: ""
 
-title: "Dejan Grujic" # the name of your site, e.g. ACME Corp.
-
-tagline: "Dejan Grujic radio voditelj, glumac i pisac."
-
-email: dgrujic@gmail.com
-
-description: >- # this means to ignore newlines until "baseurl:"
-  Dejan Grujić je diplomirani glumac, voditelj, spiker, novinar, urednik. Trideset godina je novinar na RTS-u, danas voditelj emisije “Ustanak” na Radio Beogradu 202.
-
-author: Dejan Grujic
-
+# Analytics
 google_analytics: G-YVGY1HEXS0
 
+# Social
 twitter:
   username: voditelj202
-  card: summary #keep this to generate a twitter share card
+  card: summary
 
+# Plugins supported by GitHub Pages
 plugins:
-  - jekyll-autoprefixer
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Collections for maintainable content
 collections:
-  pages:
+  radio:
     output: true
-    permalink: /:path/:basename
+    permalink: /radio/:title/
+  acting:
+    output: true
+    permalink: /acting/:title/
+  writing:
+    output: true
+    permalink: /writing/:title/
+  press:
+    output: true
+    permalink: /press/:title/
+
+# Defaults to ensure titles/descriptions exist
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+      image: "/assets/img/dejan_fotografija_cropped.jpg"
+      seo:
+        type: "Person"
+
+# Build settings
+markdown: kramdown
+remote_theme: hydecorp/hydejack
+exclude:
+  - node_modules
+  - vendor
+  - .bundle
+
+# Navigation menu (Hydejack)
+menu:
+  - title: "Biografija"
+    url: "/biography/"
+  - title: "Radio"
+    url: "/radio/"
+  - title: "Gluma"
+    url: "/acting/"
+  - title: "Pisanje"
+    url: "/writing/"
+  - title: "Press"
+    url: "/press/"
+  - title: "Crtica"
+    url: "/editorial/"
+  - title: "Galerija"
+    url: "/gallery/"
+  - title: "Reči"
+    url: "/quotes/"
+  - title: "Kontakt"
+    url: "/contact/"
+
+# Hydejack options (minimal)
+hydejack:
+  no_page_meta: false
+  accent_color: "#1565c0"
+
+# Logo and favicon
+# logo: /assets/img/logo-white.png
+favicon: /assets/img/favicon.png
+
+# Language toggle config
+serbian_script_toggle:
+  default: latin
+  storage_key: "serbianScriptPreference"

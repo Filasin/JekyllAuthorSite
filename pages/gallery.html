@@ -1,16 +1,21 @@
 ---
-layout: default
+layout: page
 title: Galerija
+permalink: /gallery/
 description: Slike Dejana Grujića i njegovih poznanika, kolega, prijatelja sa posla, promocija, svakodnevnih dešavanja...
 ---
 
+<div data-transliterate>
+<!-- Hero Section -->
+<div class="hero" style="min-height: 250px;">
+    <div style="padding: 60px 20px; text-align: center;">
+        <h1 style="color: #333; font-size: 2.5rem;">Galerija</h1>
+        <p style="color: #555; font-size: 1.1rem;">Fotografije iz profesionalnog i ličnog života</p>
+    </div>
+</div>
+
 <div class="section">
     <div class="w-container">
-        <div class="w-row">
-            <div class="w-col w-col-12">
-                <h1 class="project-title text-center">Galerija</h1>
-            </div>
-        </div>
         <div class="w-row">
             <div class="row custom" id="gallery">
                 {% for picture in site.data.gallery_pictures %}
@@ -38,7 +43,7 @@ description: Slike Dejana Grujića i njegovih poznanika, kolega, prijatelja sa p
     // Open modal with image
     function openModal(imagePath, caption) {
         const modal = document.getElementById('galleryModal');
-        modal.style.display = 'flex'; // Use 'flex' for proper centering
+        modal.style.display = 'flex';
         document.getElementById('modalImage').src = '{{ "assets/img/galerija/" | relative_url }}' + imagePath;
         document.getElementById('modalCaption').textContent = caption;
     }
@@ -49,9 +54,9 @@ description: Slike Dejana Grujića i njegovih poznanika, kolega, prijatelja sa p
         modal.style.display = 'none';
     }
 </script>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
 <link rel="stylesheet" href="{{ "/assets/css/gallery.css" | relative_url }}">
 <link rel="stylesheet" href="{{ "/assets/css/lightbox.css" | relative_url }}">
 <link rel="stylesheet" href="{{ "/assets/css/modal.css" | relative_url }}">
